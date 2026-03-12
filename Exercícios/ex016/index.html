@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes de : | ::</title>
+    
+
+    <style>
+        /*
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+        */
+        a {
+            text-decoration: none;
+            color: red;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+        .especial {
+                background-color: rgba(0, 0, 0, 0.39);
+
+        }
+        .especial::before {
+            content: '⮕';
+        }
+        .especial::after {
+            content: '⬅';
+        }
+    </style>
+</head>
+<body>
+    <h1>Links abaixo</h1>
+    <ul>
+        <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+        <li><a href="instagram.com" target="_blank" class="especial" >Instagram</a></li>
+        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+    </ul>
+</body>
+</html>
